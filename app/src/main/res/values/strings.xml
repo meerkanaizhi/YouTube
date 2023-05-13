@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">YouTube</string>
+    <string name="playlist">string</string>
+    <string name="not_connection_message">not_connect</string>
 </resources>

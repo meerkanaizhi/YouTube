@@ -14,7 +14,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField "String", "API_KEY", "\"AIzaSyBhuLrWzqEom9tIbxkwuXj8DJI7tHwBbS0\""
+        buildConfigField "String", "API_KEY", "\"AIzaSyDUDivXoohqTytMX3wfjOLIQHmI-rVtSs8\""
         buildConfigField "String", "BASE_URL","\"https://www.googleapis.com/youtube/v3/\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

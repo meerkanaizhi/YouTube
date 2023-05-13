@@ -1,18 +1,20 @@
 package com.example.youtube.base
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
+
 
 abstract class BaseActivity<VB : ViewBinding, VM: BaseViewModel> : AppCompatActivity() {
 
     protected lateinit var binding: VB
-    protected abstract fun inflateViewBinding(): VB
+    protected abstract fun inflateViewBinding(inflater: LayoutInflater): VB
     protected abstract val viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = inflateViewBinding()
+        binding = inflateViewBinding(layoutInflater)
         setContentView(binding.root)
 
         isConnection()
